@@ -6,9 +6,10 @@
     <title>Ashal Ramzan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <script defer src = "script.js"></script>
 </head>
 <body>
-    <nav id = "desktop-nav">
+    <nav id = "desktop-nav" class="hidden">
         <div class = "logo">Ashal Ramzan</div>
         <div>
             <ul class="nav-links">
@@ -19,7 +20,7 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" class="hidden">
         <div class = "logo">Ashal Ramzan</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -35,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <section id = "profile">
+    <section id = "profile" class="hidden">
         <div class="section_pic-container">
             <img src="./assets/profile-pic.png" alt="ashal profile picture">
         </div>
@@ -55,7 +56,7 @@
             </div>
         </div>
     </section>
-    <section id = "about">
+    <section id = "about" class="hidden">
         <p class = "section__text__p1">Get To Know More</p>
         <h1 class = "title">About Myself</h1>
         <div class="section-container">
@@ -88,7 +89,7 @@
         </div>
         <img src="./assets/arrow.png" alt="arrow to next section" class="icon arrow" onclick="location.href='./#experience'">
     </section>
-    <section id="experience">
+    <section id="experience" class="hidden">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
@@ -176,7 +177,7 @@
         </div>
         <img src="./assets/arrow.png" alt="arrow to next section" class="icon arrow" onclick="location.href='./#interests'">
     </section>
-    <section id = "interests">
+    <section id = "interests" class="hidden">
         <p class="section__text__p1">These are some of my</p>
         <h1 class="title">Interests</h1>
         <div class="experience-details-container">
@@ -216,7 +217,7 @@
         </div>
         <img src="./assets/arrow.png" alt="arrow to next section" class="icon arrow" onclick="location.href='./#contact'">
     </section>
-    <section id="contact">
+    <section id="contact" class="hidden">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">

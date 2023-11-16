@@ -88,6 +88,8 @@ a:hover{
 
 #hamburger-nav {
     display: none;
+    position: relative;
+    z-index: 1;
 }
 
 .hamburger-menu {
@@ -263,7 +265,6 @@ section {
 
 #about {
     position: relative;
-    animation: fade-up 0.5s;
 }
 
 .about-containers {

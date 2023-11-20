@@ -9,7 +9,8 @@
 
  body {
     font-family: 'Roboto Condensed', sans-serif;
-    background-image: url("./assets/background.jpg");
+    /* background-image: url("./assets/background.jpg"); */
+    background-color: #000000;
  }
 
 .hidden {
@@ -30,7 +31,11 @@
  }
 
  p {
-    color: rgb(85,85,85);
+    color: white;
+ }
+ 
+.textbox {
+    color: black;
  }
 
  /* transition */
@@ -55,7 +60,7 @@ nav {
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
     text-decoration-color: color(white);
     box-shadow: inset 0 0 0 0 #a61fcf;
@@ -64,7 +69,7 @@ a{
 
 a:hover{
     box-shadow: inset 200px 0 0 0 #54b3d6;
-    color: white;
+    color: black;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181,181,181);
@@ -73,7 +78,7 @@ a:hover{
 .logo {
     font-size: 2rem;
     box-shadow: inset 0 0 0 0 #a61fcf;
-    color: #000000;
+    color: white;
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -82,7 +87,7 @@ a:hover{
 .logo:hover {
     cursor: default;
     box-shadow: inset 200px 0 0 0 #54b3d6;
-    color: white;
+    color: black;
 }
 
 /* hamburger */
@@ -111,7 +116,7 @@ a:hover{
 .hamburger-icon span{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3 ease-in-out;
 }
 
@@ -119,7 +124,7 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0%;
-    background: ghostwhite;
+    background: black;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -131,7 +136,6 @@ a:hover{
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -198,25 +202,30 @@ section {
 .section__text {
     align-self: center;
     text-align: center;
+    color: wheat;
 }
 
 .section__text p {
     font-weight: 600;
+    color: white;
 }
 
 .section__text__p1 {
     text-align: center;
     font-size: 1.25rem;
+    color: white;
 }
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .title {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2%;
+    color: white;
 }
 
 #socials-container {
@@ -227,6 +236,11 @@ section {
 }
 
 .icon {
+    cursor: pointer;
+    height: 2rem;
+    filter: invert(100%);
+}
+.icon1 {
     cursor: pointer;
     height: 2rem;
 }
@@ -241,9 +255,17 @@ section {
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
+    width: 9rem;
     border-radius: 2rem;
+    transition: 0.5s;
 }
+
+.btn:hover {
+    letter-spacing: 0.15em;
+    background: var(--clr);
+    box-shadow: 0 0 35px var();
+}
+/*
 
 .btn-color-1, .btn-color-2 {
     border: rgb(53,53,53) 0.2rem solid;
@@ -252,22 +274,22 @@ section {
     cursor: pointer;
 }
 .btn-color-1, .btn-color-2:hover {
-    background: rgb(53,53,53);
-    color: white;
 }
 
 .btn-color-1:hover {
-    background: 0;
     color: black;
 }
 
 .btn-color-2{
     background: none;
+    color: white;
 }
 
 .btn-color-2:hover{
     border: rgb(255,255,255) 0.1rem solid;
 }
+
+*/
 
 .btn-container {
     gap: 1rem;
@@ -402,7 +424,7 @@ article .icon {
     background: (250,250,250);
     margin: 2rem auto;
     padding: 0.5rem;
-    background: ghostwhite;
+    background: black;
 }
 
 .contact-info-container {
@@ -419,6 +441,7 @@ article .icon {
 
 .contact-icon {
     cursor: default;
+    filter: invert(100%);
 }
 
 .email-icon{

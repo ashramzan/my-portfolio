@@ -265,32 +265,8 @@ section {
     letter-spacing: 0.15em;
     background: var(--clr);
     box-shadow: 0 0 35px var();
-}
-/*
-
-.btn-color-1, .btn-color-2 {
-    border: rgb(53,53,53) 0.2rem solid;
-}
-.btn-color-1:hover, .btn-color-2:hover {
-    cursor: pointer;
-}
-.btn-color-1, .btn-color-2:hover {
-}
-
-.btn-color-1:hover {
-    color: black;
-}
-
-.btn-color-2{
-    background: none;
     color: white;
 }
-
-.btn-color-2:hover{
-    border: rgb(255,255,255) 0.1rem solid;
-}
-
-*/
 
 .btn-container {
     gap: 1rem;

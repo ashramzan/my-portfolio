@@ -242,7 +242,7 @@ section {
     filter: invert(100%);
 }
 .icon1 {
-    cursor: pointer;
+    cursor: default;
     height: 2rem;
 }
 

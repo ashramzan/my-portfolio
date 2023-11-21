@@ -46,12 +46,28 @@
     .about-containers{
         margin-top: 0;
     }
-    #SD {
+    #SoftwareDev {
         margin-left: 6%;
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:811px){
+
+.about-col-2 {
+    flex-basis: 80%;
+}
+
+#ashal-about-pic {
+    margin-bottom: 2rem;
+}
+
+.about-sub-title {
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width:720px){
     #contact, footer {
         height: 40vh;
     }
@@ -107,6 +123,9 @@
     .text-container {
         text-align: justify;
     }
+
+
+
     
 }
 

@@ -203,13 +203,6 @@ section {
     }
 }
 
-#ashal-about-pic {
-    display: flex;
-    width: 250px ;
-    height: 400px;
-    margin: auto 0;
-}
-
 .section_pic-container {
     display: flex;
     height: 400px;
@@ -300,11 +293,11 @@ section {
 }
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .about-col-1 {
-    flex-basis: 35%;
+    /* flex-basis: 10%; */
 }
 .about-col-1 img {
     width: 100%;
@@ -313,6 +306,13 @@ section {
 
 .about-col-2 {
     flex-basis: 60%;
+    margin-left: 5%;
+}
+
+#ashal-about-pic {
+    display: flex;
+    width: 250px ;
+    margin: auto 0;
 }
 
 .about-sub-title {
@@ -343,7 +343,7 @@ section {
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .tab-links.active-link::after {

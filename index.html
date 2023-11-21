@@ -14,7 +14,6 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -30,7 +29,6 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#interests" onclick="toggleMenu()">Interests</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>  
             </div>
@@ -58,26 +56,13 @@
         </div>
     </section>
     <section id = "about" class="hidden">
-        <p class = "section__text__p1">Get To Know More</p>
-        <h1 class = "title">About Myself</h1>
-        <div class="section-container">
-            <div class = "section_pic-container1">
-                <img src = "./assets/programmer.gif" alt="picture of a programmer" class = "about-pic"/>
-            </div>
-            <div class = "about-details-container">
-                <div class="about-containers">
-                    <div class = "details-container">
-                        <img src="./assets/experience.png" alt="first role icon" class="icon1"/>
-                        <h3>Looking for my first role</h3>
-                        <p class="textbox">To showcase my skills and passion for Software</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon1"/>
-                        <h3>Education</h3>
-                        <p class="textbox">Foundation Degree in Software Development <br /> Manchester Metropolitan University <br /> Grade 2.1</p>
-                    </div>
+        <div class="about-new-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/ashal-crop.png"   alt="image of ashal" id="ashal-about-pic">
                 </div>
-                <div class="text-container">
+                <div class="about-col-2">
+                    <h1 class="about-sub-title">About Me</h1>
                     <p>I am a hardworking and conscientious individual, eager to learn and looking to develop and further my skills in a fast-paced
                         environment. Worked with a variety of technologies, with a recent focus on AWS and .NET during my graduate programme.
                         <br /><br/> Additionally, I pursued three years of Medicine post my software degree, with the hope that I could merge my software and medical knowledge
@@ -85,94 +70,38 @@
                         I had to step away from Medicine, ultimately fueling my determination even more to re-immerse myself into the world of software. I am now more motivated
                         than ever to build upon my existing skills and perform for the right employer. 
                     </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow to next section" class="icon arrow" onclick="location.href='./#experience'">
-    </section>
-    <section id="experience" class="hidden">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>C#</h3>
-                                <p class="textbox">Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>AWS</h3>
-                                <p class="textbox">Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>Python</h3>
-                                <p class="textbox">Basic</p>
-                            </div>
-                        </article>                        
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p class="textbox">Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>CSS</h3>
-                                <p class="textbox">Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p class="textbox">Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>SQL</h3>
-                                <p class="textbox">Intermediate</p>
-                            </div>
-                        </article>                        
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>Git</h3>
-                                <p class="textbox">Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark_icon.png" alt="checkmark icon" class="icon1"/>
-                            <div>
-                                <h3>Selenium | NUnit</h3>
-                                <p class="textbox">Basic</p>
-                            </div>
-                        </article>
+                    <div class="tab-titles">
+                        <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class ="tab-links" onclick="opentab('education')">Education</p>
+                        <p class ="tab-links" onclick="opentab('experience')">Experience</p>
                     </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Capita Graduate Programme</h2>
-                    <p class="textbox">Underwent a 3 month graduate programme with Capita which was designed to help further develop my skillset allowing me to start
-                        my career in software with a strong foundation. <br /><br /> With a focus on AWS and .NET we undertook different problems and
-                        challenged ourselves to think creatively and apply our knowledge more effectively. I completed the training with an average
-                        mark of 96%. <br/><br/>The programme included: <br/><br/>
-                        • Soft skills, Python programming, Linux command line. <br/><br/>
-                        • Networking and Network securities, Relational Databases. <br/><br/>
-                        • Aws: CloudFront, Lambda, S3, EC2, DynamoDB, Route 53, Load Balancing, Scaling. <br/><br/> I am scheduled to sit my AWS Cloud Practitioner Exam in the coming days. 
-                        </p>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AWS & .NET</span><br>Managing and deploying applications and writing programs in C#</li>
+                            <li><span>Full Stack Development</span><br>Using HTML, CSS, JS/ReactJS, SQL and PHP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Manchester Metropolitan University</span><br>2.1 in Software Development (FDSc)</li>
+                            <li><span>Highest Scoring Module</span><br>79% in Mobile Application Development (Java / Android Studio)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Capita Novus Graduate Programme</span>
+                                <br>Underwent a 3 month graduate programme with Capita which was designed to help 
+                                further develop my skillset allowing me to start my career in software with a strong foundation.
+                                <br><br>With a focus on AWS and .NET we undertook different problems and 
+                                challenged ourselves to think creatively and apply our knowledge more effectively. 
+                                I completed the training with an average mark of 96%.
+                                <br><br>The programme included:
+                                • Soft skills, Python programming, Linux command line.
+                                • Networking and Network securities, Relational Databases.
+                                • Aws: CloudFront, Lambda, S3, EC2, DynamoDB, Route 53, Load Balancing, Scaling.
+                                <br><br>I am scheduled to sit my AWS Cloud Practitioner Exam soon.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -237,7 +166,6 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#interests">Interests</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>

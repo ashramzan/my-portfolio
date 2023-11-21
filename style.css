@@ -394,7 +394,7 @@ section {
 
 .arrow {
     position: absolute;
-    right: -5rem;
+    right: -2rem;
     bottom: 2.5rem;
     mix-blend-mode: multiply;
 }

@@ -123,6 +123,7 @@
     .text-container {
         text-align: justify;
     }
+}
 
 @media screen and (max-width:270px){
     #profile {
@@ -130,4 +131,24 @@
     }
 }
 
+@media screen and (max-width:600px){
+    .container-interests .card .imgBx  {
+        width:80%;
+        height: 50%;
+    } 
+    .container-interests .card:hover {
+        height: 450px;
+    }
+    .container-interests .card .content {
+        top: 240px;
+    }
+    .container-interests .card:hover .content {
+        top: 130px;
+        height: 300px;
+    }
+    #interests-title {
+        margin-bottom: 8%;
+    }
+
+}
 

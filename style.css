@@ -249,6 +249,10 @@ section {
     color: white;
 }
 
+#interests-title {
+    margin-bottom: 5%;
+} 
+
 #socials-container {
     display: flex;
     justify-content: center;
@@ -459,26 +463,111 @@ article .icon {
     position: relative;
 }
 
-.color-container {
-    border-color: rgb(163,163,163);
-    background: ghostwhite;
-}
-
-.interests-img {
-    border-radius: 2rem;
-    width: 50%;
-    height: 50%;
-}
-
 .interests-title {
     margin: 1rem;
     color: black;
 }
 
-.interests-btn {
-    color: black;
-    border-color: rgb(163,163,163);
+.container-interests {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 50px 50px;
 }
+
+.container-interests .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 400px;
+    height: 350px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.container-interests .card:hover {
+    height: 400px;
+}
+
+.container-interests .card .imgBx {
+    position: absolute;
+    top: 20px;
+    width: 350px;
+    height: 250px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-interests .card:hover .imgBx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.container-interests .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content p {
+    color: black;
+    padding: 0 20px;
+}
+
+.content a {
+    color: black;
+}
+
+.container-interests .card .content {
+    position: absolute;
+    width: 100%;
+    top: 290px;
+    padding: 0 40px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container-interests .card:hover .content {
+    top: 130px;
+    height: 280px;
+}
+
+.container-interests .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container-interests .card .content p {
+    color: #333;
+}
+
+.container-interests .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
 
 /* projects */
 

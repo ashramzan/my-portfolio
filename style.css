@@ -483,7 +483,11 @@ article .icon {
 /* projects */
 
 #projects {
-    padding: 50px 0;
+    padding: 100px 0;
+}
+
+#project-title {
+    text-align: center;
 }
 
 .work-list {

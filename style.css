@@ -304,9 +304,9 @@ section {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.about-col-1 {
-    /* flex-basis: 10%; */
-}
+/* .about-col-1 {
+      flex-basis: 10%;
+} */
 .about-col-1 img {
     width: 100%;
     border-radius: 15%;

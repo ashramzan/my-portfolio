@@ -374,7 +374,7 @@ section {
 }
 
 .tab-contents.active-tab {
-    display: block;
+    display: flex;
 }
 
 .about-containers {

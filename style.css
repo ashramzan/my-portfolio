@@ -418,6 +418,9 @@ section {
     height: 80%;
 }
 
+#skill-list {
+    margin-left: 2rem;
+}
 
 /* experience */ 
 
